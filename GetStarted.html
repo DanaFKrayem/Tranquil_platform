@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started</title>
+    <link rel="stylesheet" href="stlyleGetstated.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Playfair+Display">
+</head>
+
+
+
+<!-- header section-->
+
+<body>
+    <!-- header section-->
+    <header>
+        <div class="hcontainer">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="removebg-preview.png" alt="tranquil">
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="JoinUs.html">Join us</a></li>
+                        <li><a href="AboutUs.html">About us</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+    <div class="pagename">
+        <h1> <q>Join Us Today to Start Your Journey Towards Better Mental Health</q></h1>
+    </div>
+
+    <section id="why-choose-us">
+
+        <form id="signup-container" action="" onsubmit="return validatePasswords()">
+            <h2>Why Choose Us?</h2>
+            <fieldset class="checkboxgroup">
+                <legend>What services are you interested in?</legend> <input type="checkbox" id="therapy"
+                    name="services" value="therapy"> <label for="therapy">Therapy</label> <input type="checkbox"
+                    id="workshops" name="services" value="workshops"> <label for="workshops">Workshops</label> <input
+                    type="checkbox" id="emergency" name="services" value="emergency"> <label for="emergency">Emergency
+                    Support</label>
+            </fieldset>
+            <h2>Sign Up</h2>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="first and last name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="8" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" minlength="8"
+                placeholder="Re-enter your password" required>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+
+            <label for="gender">Gender:</label>
+            <div class="select-container"> 
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="prefer-not-to-say">Prefer not to say</option>
+                </select>
+            </div>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit">Sign Up</button>
+            <p>Already have an account? <a href="login.html">Log in here</a>.</p>
+            </div>
+        </form>
+
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>Contact us at <a href="mailto:danafkrayem114@gamil.com">contact@tranquil.com</a></p>
+            <p> <strong>We are here for you , get in touch anytime</strong> </p>
+            <p>&copy; 2025 Tranquil. All rights reserved.</p>
+            <p>made by : Dana F.Krayem & Alma A.Pharon</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

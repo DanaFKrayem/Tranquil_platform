@@ -1,0 +1,650 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #23362c;
+    margin: 0;
+    padding: 0;
+    display: flex;/* Flexbox layout */
+    flex-direction: column;/* to arrange the elements of the body in a vertical column*/
+    align-items: center;/* center the elements  of the body horizontally*/
+}
+/*header*/
+.hcontainer {
+    display: grid;/*to make it grid container*/
+    grid-template-columns: 1fr;/* to make the grid single column */
+    grid-template-rows: auto auto; /* two rows in the grid, automatically sized based on their content*/
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;/*center horizontally*/
+    padding: 0 20px;
+}
+header {
+    background: #6ba5b2;
+    color: #2A322B;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;/* to make the header stick to the top of the page when scrolling*/
+    top: 0;/*position of the sticky header*/
+    z-index: 1000;/*to ensure the the header remains on the top of others (making a layer above them)*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;/* to distribute items in the header with space between them*/
+
+}
+
+header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;/*stay on a single row*/
+    flex: 1;
+}
+
+header .logo {
+    flex: 1;/* only 1 part of the available space in the flex container to the logo */
+    margin-left: 10px;
+}
+
+header .logo img {
+    height: 60px;
+    width: 120px;
+  margin: auto;/*to center the image */
+
+}
+
+header nav {
+    flex: 2;/* only  parts of the available space in the flex container to the logo */
+}
+
+header nav ul {
+    /*remove the default list styling first*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;/*Flexbox layout model to the list to making its items flexible*/
+    justify-content: center;/* Center the list items horizontally within the container. */
+    flex-wrap: nowrap;/*stay on a single row*/
+}
+
+header nav li {
+    margin: 0 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+header nav a {
+    color: #2A322B;
+    padding: 5px 10px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #3F5141;
+}
+
+.navbuttons {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 3px;
+    margin-right: 10px;
+}
+
+.navbuttons button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    background-color: #0a3f5e;
+    color: #EEF4EE;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-left: 5px;
+    margin-right: 30px;
+}
+
+.navbuttons button:hover {
+    background-color: #012845;
+    transform: scale(1.05);
+}
+
+.navbuttons a {
+    color: #EEF4EE;
+    text-decoration: none;
+}
+
+/* Welcome Section */
+.Welcome {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #2A322B;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    background-color: #fff;
+    background-image: url('welcommme.jpg');
+    background-size:contain;
+    background-position:right;
+    background-repeat: no-repeat;
+}
+
+.Welcome .content1 {
+    max-width: 50%;
+    margin: 10px 20px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.Welcome h1 {
+    font-size: 2rem;/* 1rem=16px appr. */
+    margin-bottom: 20px;
+    font-family: "Playfair Display", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Welcome .content1 h1 span {
+    font-size: 3.5rem;
+    color: #177070;
+    font-weight: bold;
+    font-family: "Sofia", sans-serif;
+    text-shadow: 3px 3px 3px #ababab;
+}
+
+.Welcome p,
+.Welcome q {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    font-family: "Playfair Display", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.access-booking button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    background-color: #0a3f5e;
+    margin-top: 10px;
+    color: #EEF4EE;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.access-booking button:hover {
+    background-color: #012845;
+    transform: scale(1.02);
+}
+
+/* who we are  */
+#introduction {
+    grid-column: 1/-1;
+    padding: 40px 20px;
+    color: #2A322B;
+    text-align: center;
+    display: grid;
+    box-sizing: content-box;
+
+}
+
+#introduction h2,
+#latest-news h2 {
+    font-size: 30px;
+    margin: 15px 0;
+    color: #177070;
+    font-family: 'Sofia', sans-serif;
+    text-shadow: 2px 2px 3px #ababab;
+    border-radius: 10%;
+    background-color: rgba(216, 229, 232, 0.3);
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    overflow: auto;
+}
+
+/* Grid Items */
+.grid-item {
+    background-color: rgba(15, 114, 139, 0.226);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(34, 35, 35, 0.539);
+    padding: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+   max-width:300px ;
+
+}
+
+.grid-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0a3f5e;
+    text-shadow: 0 4px 6px rgba(255, 255, 255, 1);
+    font-family: 'Playfair Display', serif;
+}
+
+.grid-item p {
+    font-size: 18px;
+    line-height: 1.3;
+    color: #2A322B;
+    text-shadow: 0 4px 6px rgba(255, 255, 255, 0.7);
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #introduction {
+        text-align: left;
+        padding: 40px 15px;
+
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        
+    }
+
+    .grid-item {
+        padding: 15px;
+
+    }}
+
+@media (max-width:1024px) {
+    header .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+    }
+
+    .navbuttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+
+#latest-news {
+    padding: 40px 20px;
+    background-color: #fff;
+    color: #1c5437;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.news-container {
+    /* Create a grid with dynamic columns: automatically creates as many columns as can fit within the container.but each column will be at least 300px wide but can expand (responsive layout)*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.news-item {
+    background-color: rgb(209 221 224 / 70%);
+    color: #EEF4EE;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+    position: relative;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.news-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0a3f5e;
+    text-shadow: 0 4px 6px rgba(255, 255, 255, 0.7);
+    font-family: 'Playfair Display', serif;
+}
+
+.news-item .news-summary {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #2A322B;
+    text-shadow: 0 4px 6px rgba(255, 255, 255, 0.7);
+}
+
+.news-item button {
+    background-color: #0a3f5e;
+    font-family: 'Times New Roman', Times, serif;
+    color: #EEF4EE;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+     transition: background-color 0.3s, transform 0.3s;/*Changes the background color  and applies tranformation  over 0.3 seconds to make the interactions smooth*/
+  
+
+}
+
+.news-item button:hover {
+    background-color: #012845;
+    transform: scale(1.05);
+}
+
+.news-full-content {
+    display: none;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+.news-full-content {
+    font-family: 'Times New Roman', Times, serif;
+    color: #012845;
+    margin-top: 10px;
+}
+
+.news-meta {
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1;
+
+}
+
+.line {
+    border: none;
+    height: 2px;
+    background-color: #012845;
+    margin-bottom: 10px;
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .news-container {
+        grid-template-columns: 1fr;
+        /* Stack grid items on smaller screens */
+    }
+
+    .news-item {
+        padding: 15px;
+    }
+
+    .news-item h3 {
+        font-size: 18px;
+    }
+
+    .news-item .news-summary {
+        font-size: 12px;
+    }
+
+    .news-item button {
+        padding: 8px 12px;
+    }
+}
+
+/* featured articles and feedbacks*/
+#featured {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+#featured h2 {
+    font-family: 'Sofia', sans-serif;
+    font-size: 28px;
+    color: #0a3f5e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.featured-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* Featured Articles:Feedback ratio */
+    gap: 20px;
+}
+
+/* Featured Articles Styling */
+.featured-articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    
+}
+.featured-articles h3 {
+    font-size: 28px;
+    color: #0a3f5e;
+    margin: left 30px;
+    font-family: 'Sofia', sans-serif;
+    margin: auto;
+    text-decoration: underline;
+}
+
+.featured-articles article {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    margin: 10px;
+}
+
+.featured-articles article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.featured-articles h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #177070;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 1px 1px 2px #ababab;
+}
+
+.featured-articles p {
+    font-size: 16px;
+    color: #2A322B;
+    margin-bottom: 15px;
+}
+
+.featured-articles a {
+    display: inline-block;
+    background-color: #0a3f5e;
+    color: #EEF4EE;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.featured-articles a:hover {
+    background-color: #012845;
+    transform: scale(1.05);
+}
+
+/* Feedback Section Styling */
+.featured-feedback {
+
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.featured-feedback h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #0a3f5e;
+    font-family: 'Sofia', sans-serif;
+    text-decoration: underline;
+}
+
+.featured-feedback blockquote {
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #2A322B;
+    border-left: 5px solid #0a3f5e;
+    padding-left: 15px;
+}
+
+.featured-feedback footer {
+    font-size: 14px;
+    color: #0a3f5e;
+    margin-top: 10px;
+    text-align: right;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .featured-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.infographic {
+    background-color: #f9f9f9; 
+    padding: 40px 20px;
+    text-align: center;
+    color: #1c5437;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.infographic h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color:  #0a3f5e;; 
+    font-family: 'Sofia', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.infographic .stat {
+    background-color: #ffffff; 
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s , box-shadow 0.3s ;
+    max-width: 800px;
+    text-align: left;
+}
+
+.infographic .stat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.infographic .stat h3 {
+    font-size: 24px;
+    color: #177070; 
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgba(23, 112, 112, 0.3); /*make an underline*/
+    padding-bottom: 5px;
+}
+
+.infographic .stat p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2A322B; /* Consistent text color */
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design  for statistics section*/
+@media (max-width: 768px) {
+    .infographic {
+        padding: 20px 10px;
+    }
+
+    .infographic h2 {
+        font-size: 28px;
+    }
+
+    .infographic .stat {
+        padding: 15px;
+    }
+
+    .infographic .stat h3 {
+        font-size: 20px;
+    }
+
+    .infographic .stat p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* Footer Styling */
+footer {
+   
+    color:  #0a3f5e;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+   }
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Footer text */
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+/* Footer links */
+footer a {
+    font-size: 20px;
+    color:#0a3f5e; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #177070; /* Lighter teal color when hovered */
+}
+
+/* Copyright Text */
+footer p:first-child {
+    font-weight: bold;
+}
+
+/* Footer bottom text (credits) */
+footer p:last-child {
+    font-style: italic;
+    font-size: 12px;
+}

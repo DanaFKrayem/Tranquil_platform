@@ -1,0 +1,367 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7faf7;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+header {
+    background: #6ba5b2;
+    color: #2A322B;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+header .header-content {
+    display: flex;
+    align-items: center;
+
+    flex-wrap: nowrap;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+header .logo {
+    flex: 1;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+
+header .logo img {
+    height: 60px;
+    width: 120px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+header nav {
+    flex: 2;
+    box-sizing: border-box;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+}
+
+header nav li {
+    margin: 0 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+header nav a {
+    color: #2A322B;
+    padding: 5px 10px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    box-sizing: border-box;
+}
+
+header nav a:hover {
+    color: #3F5141;
+}
+
+
+
+
+.pagename h1 {
+    font-size: 30px;
+    margin-left: 20px;
+    color: #177070;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+    border-bottom: #177070 solid 1px;
+    text-shadow: 3px 3px 3px #ababab;
+    box-sizing: border-box;
+}
+
+#why-choose-us {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f7faf7;
+    color: #1c5437;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+#why-choose-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #177070;
+    font-family: 'Sofia', sans-serif;
+    text-shadow: 2px 2px 3px #ababab;
+}
+
+#signup-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+
+#signup-container label,
+.checkboxgroup legend {
+    font-size: 1 rem;
+    margin-bottom: 10px;
+    color: #012845;
+    font-family: 'Playfair Display', serif;
+    display: block;
+    text-align: left;
+
+}
+
+#signup-container input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+button {
+    background-color: #0a3f5e;
+    color: #EEF4EE;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+#signup-container button:hover {
+    background-color: #012845;
+    transform: scale(1.05);
+}
+
+#signup-container p {
+    font-size: 1rem;
+    color: #2A322B;
+}
+
+#signup-container a {
+    color: #177070;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#signup-container a:hover {
+    text-decoration: underline;
+}
+
+
+.checkboxgroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Hide the default checkbox */
+.checkboxgroup input[type="checkbox"] {
+    display: none;
+}
+
+.checkboxgroup label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkboxgroup label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #177070;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+/* Change the background color of the custom checkbox when checked */
+.checkboxgroup input[type="checkbox"]:checked+label::before {
+    background-color: #177070;
+}
+
+/* Add a checkmark when the checkbox is checked */
+.checkboxgroup input[type="checkbox"]:checked+label::after {
+    content: "✔";
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Style the container for the select element */
+.select-container {
+    position: relative;
+    width: 200px;
+}
+
+
+
+/* Style the select element */
+.select-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+
+footer {
+
+    color: #0a3f5e;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer .fcontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Footer text */
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+/* Footer links */
+footer a {
+    font-size: 20px;
+    color: #0a3f5e;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #177070;
+    /* Lighter teal color when hovered */
+}
+
+/* Copyright Text */
+footer p:first-child {
+    font-weight: bold;
+}
+
+/* Footer bottom text (credits) */
+footer p:last-child {
+    font-style: italic;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #signup-container {
+        padding: 20px 10px;
+        margin: auto;
+    }
+
+    #signup-container h2 {
+        font-size: 1.6rem;
+    }
+
+    #signup-container label {
+        font-size: 0.9rem;
+    }
+
+    #signup-container input {
+        padding: 7px;
+    }
+
+    #signup-container button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #signup-container {
+        padding: 15px 5px;
+        margin: auto;
+    }
+
+    #signup-container h2 {
+        font-size: 1.4rem;
+    }
+
+    #signup-container label {
+        font-size: 0.8rem;
+    }
+
+    #signup-container input {
+        padding: 6px;
+    }
+
+    #signup-container button {
+        font-size: 0.8rem;
+    }
+}

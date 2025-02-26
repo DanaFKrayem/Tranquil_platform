@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>services</title>
+    <link rel="stylesheet" href="styleservices.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Playfair+Display">
+
+</head>
+
+<body>
+    <!-- Header Part -->
+    <header>
+        <div class="hcontainer">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="removebg-preview.png" alt="tranquil">
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="JoinUs.html">Join us</a></li>
+                        <li><a href="AboutUs.html">About us</a></li>
+                    </ul>
+                </nav>
+                <div class="navbuttons">
+                    <button><a href="GetStarted.html">Get Started</a></button>
+                    <button><a href="login.html">Login</a></button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Therapy Sessions Section -->
+    <section id="therapy-sessions">
+        <h2>Therapy Sessions</h2>
+        <p>We offer a variety of therapy sessions to cater to your needs, whether you prefer online or in-person
+            appointments.</p>
+
+        <div class="therapy-options">
+            <div class="therapy-option">
+                <h3>Online Therapy Sessions</h3>
+                <p>Connect with our therapists from the comfort of your home. Our online therapy sessions are convenient
+                    and secure, allowing you to receive the support you need, no matter where you are.</p>
+                <button onclick="window.location.href='#online-booking-form'">Book Online Session</button>
+            </div>
+
+            <div class="therapy-option">
+                <h3>In-Person Therapy Sessions</h3>
+                <p>For those who prefer face-to-face interactions, we offer in-person therapy sessions at our tranquil
+                    facilities. Experience a supportive and private environment to discuss your mental health needs.</p>
+                <button onclick="window.location.href='#inperson-booking-form'">Book In-Person Session</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Booking Form Section -->
+    <div class="therapy-forms">
+        <section id="online-booking-form">
+            <h3>Book an Online Therapy Session</h3>
+            <p>Fill out the form below to book your online therapy session.</p>
+
+            <form action="">
+                <label for="name-online">Name:</label>
+                <input type="text" id="name-online" name="name" required>
+
+                <label for="email-online">Email:</label>
+                <input type="email" id="email-online" name="email" required>
+
+                <label for="date-online">Date:</label>
+                <input type="date" id="date-online" name="date" required>
+
+                <label for="time-online">Time:</label>
+                <input type="time" id="time-online" name="time" required>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+
+        <!-- In-Person Booking Form Section -->
+        <section id="inperson-booking-form">
+            <h3>Book an In-Person Therapy Session</h3>
+            <p>Fill out the form below to book your in-person therapy session. Choose the type of session that best
+                suits
+                your needs.</p>
+
+            <form action="">
+                <label for="name-inperson">Name:</label>
+                <input type="text" id="name-inperson" name="name" required>
+
+                <label for="email-inperson">Email:</label>
+                <input type="email" id="email-inperson" name="email" required>
+
+                <label for="date-inperson">Date:</label>
+                <input type="date" id="date-inperson" name="date" required>
+
+                <label for="time-inperson">Time:</label>
+                <input type="time" id="time-inperson" name="time" required>
+
+                <label for="type-inperson">Type:</label>
+                <select id="type-inperson" name="type" required>
+                    <option value="" disabled selected>Select session type</option>
+                    <option value="individual">Individual</option>
+                    <option value="group">Group</option>
+                    <option value="couple">Couple</option>
+                    <option value="family">Family</option>
+                </select>
+
+                <div class="session-descriptions">
+                    <p><strong>Individual:</strong> One-on-one sessions tailored to your specific needs and goals.</p>
+                    <p><strong>Group:</strong> Join a small group led by a therapist to discuss common issues and
+                        support
+                        each other.</p>
+                    <p><strong>Couple:</strong> Sessions designed to help couples improve communication and resolve
+                        conflicts.</p>
+                    <p><strong>Family:</strong> Family therapy sessions aimed at improving relationships and addressing
+                        family dynamics.</p>
+                </div>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </div>
+    <!-- Workshops Section -->
+    <section id="workshops">
+        <h2>Workshops</h2>
+        <p>Join our workshops to gain valuable insights and skills. Each workshop is led by experienced instructors and
+            covers various topics related to mental health and well-being.</p>
+        <div class="workshop-slider">
+            <div class="workshop-list">
+                <div class="workshop-item">
+                    <h3>Mindfulness Workshop</h3>
+                    <img src="Mindfulness_Workshop.png" alt="Mindfulness_Workshop" class="workshop-img">
+                    <p><strong>Time:</strong> 10:00 AM - 12:00 PM</p>
+                    <p><strong>Instructor:</strong> Dr. Amr Samer</p>
+                    <p><strong>About:</strong> Learn mindfulness techniques to reduce stress and improve mental clarity.
+                    </p>
+                </div>
+                <div class="workshop-item">
+                    <h3>Stress Management Workshop</h3>
+                    <img src="Stress_Management_Workshop.png" alt="Stress Management Workshop" class="workshop-img">
+                    <p><strong>Time:</strong> 2:00 PM - 4:00 PM</p>
+                    <p><strong>Instructor:</strong> Dr. Sarah Kamel</p>
+                    <p><strong>About:</strong> Discover effective strategies to manage stress and enhance your overall
+                        well-being.</p>
+                </div>
+                <div class="workshop-item">
+                    <h3>Emotional Intelligence Workshop</h3>
+                    <img src="Emotional_Intelligence_Workshop.png" alt="Emotional Intelligence Workshop"
+                        class="workshop-img">
+                    <p><strong>Time:</strong> 9:00 AM - 11:00 AM</p>
+                    <p><strong>Instructor:</strong> Dr. John Hallak</p>
+                    <p><strong>About:</strong> Improve your emotional intelligence to better understand and manage your
+                        emotions.</p>
+                </div>
+                <div class="workshop-item">
+                    <h3>Healthy Relationships Workshop</h3>
+                    <img src="healthy_Relationships_Workshop.png" alt="healthy_Relationships_Workshop"
+                        class="workshop-img">
+                    <p><strong>Time:</strong> 1:00 PM - 3:00 PM</p>
+                    <p><strong>Instructor:</strong> Dr. Emad Fadel</p>
+                    <p><strong>About:</strong> Learn how to build and maintain healthy relationships with effective
+                        communication skills.</p>
+                </div>
+                <div class="workshop-item">
+                    <h3>Self-Care Workshop</h3>
+                    <img src="Self_Care_Workshop.png" alt="Self_Care_Workshop" class="workshop-img">
+                    <p><strong>Time:</strong> 3:00 PM - 5:00 PM</p>
+                    <p><strong>Instructor:</strong> Dr. Michael Hazaa</p>
+                    <p><strong>About:</strong> Explore self-care practices to enhance your mental and physical
+                        well-being.
+                    </p>
+                </div>
+                <div class="workshop-item">
+                    <h3>Resilience Building Workshop</h3>
+                    <img src="Resilience_Building_Workshop.png" alt="Resilience_Building_Workshop.png"
+                        class="workshop-img">
+                    <p><strong>Time:</strong> 11:00 AM - 1:00 PM</p>
+                    <p><strong>Instructor:</strong> Dr. Lisa Waeel</p>
+                    <p><strong>About:</strong> Develop resilience skills to cope with life's challenges and bounce back
+                        stronger.</p>
+                </div>
+            </div>
+            <button class="prev" onclick="changeWorkshopSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeWorkshopSlide(1)">&#10095;</button>
+
+        </div>
+    </section>
+
+
+    <!-- Emergency Support Section -->
+    <section id="emergency-support">
+        <h2>Emergency Support</h2>
+
+        <p>If you or someone you know is in immediate danger, please contact emergency services.
+            For urgent mental health support, reach out to our helpline or email us for assistance.</p>
+        <p><strong>Helpline:</strong> 911</p>
+        <p><strong>Email:</strong> support@tranquil.com</p>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>Contact us at <a href="mailto:danafkrayem114@gamil.com">contact@tranquil.com</a></p>
+            <p> <strong>We are here for you , get in touch anytime</strong> </p>
+            <p>&copy; 2025 Tranquil. All rights reserved.</p>
+            <p>made by : Dana F.Krayem & Alma A.Pharon</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

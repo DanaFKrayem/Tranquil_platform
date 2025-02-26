@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Playfair+Display">
+    <link rel="stylesheet" href="styleadmin.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="removebg-preview.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="admin.html">Admin Dashboard</a></li>
+                    <li><a href="services.html#workshops"> Workshops </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Admin Dashboard</h1>
+        <div class="form-container">
+            <div class="form">
+                <h2>Add New Workshop</h2>
+                <form id="add-workshop-form">
+                    <label for="workshop-name">Workshop Name</label>
+                    <input type="text" id="workshop-name" name="name" required>
+
+                    <label for="workshop-img">Image URL</label>
+                    <input type="text" id="workshop-img" name="img" required>
+
+                    <label for="workshop-time">Time</label>
+                    <input type="text" id="workshop-time" name="time" required>
+
+                    <label for="workshop-instructor">Instructor</label>
+                    <input type="text" id="workshop-instructor" name="instructor" required>
+
+                    <label for="workshop-about">About</label>
+                    <textarea id="workshop-about" name="about" required></textarea>
+
+                    <button type="submit">Add Workshop</button>
+                </form>
+            </div>
+
+            <div class="form">
+                <h2>Edit Workshop Time</h2>
+                <form id="edit-workshop-form">
+                    <label for="edit-name">Workshop Name</label>
+                    <input type="text" id="edit-name" name="name" required>
+
+                    <label for="edit-instructor">Instructor</label>
+                    <input type="text" id="edit-instructor" name="instructor" required>
+
+                    <label for="edit-time">New Time</label>
+                    <input type="text" id="edit-time" name="time" required>
+
+                    <button type="submit">Edit Time</button>
+                </form>
+            </div>
+
+            <div class="form">
+                <h2>Delete Workshop</h2>
+                <form id="delete-workshop-form">
+                    <label for="delete-name">Workshop Name</label>
+                    <input type="text" id="delete-name" name="name" required>
+
+                    <label for="delete-instructor">Instructor</label>
+                    <input type="text" id="delete-instructor" name="instructor" required>
+
+                    <button type="submit">Delete Workshop</button>
+                </form>
+            </div>
+        </div>
+
+        
+        <div id="workshops-list" class="workshops-list">
+            <a href="services.html#workshops">Go to Workshops Section</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Contact us at <a href="mailto:danafkrayem114@gamil.com">contact@tranquil.com</a></p>
+            <p> <strong>We are here for you , get in touch anytime</strong> </p>
+            <p>&copy; 2025 Tranquil. All rights reserved.</p>
+            <p>made by : Dana F.Krayem & Alma A.Pharon</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
